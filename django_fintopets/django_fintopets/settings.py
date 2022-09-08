@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+STATICFILES_DIRS = ['C:/Users/Franz Cortes/Documents/2- Mision TIC/proyecto Mision TIC/Findtopets/django_fintopets/interfaces/templates/interfaces_de_inicio/static']
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'interfaces'
 ]
 
 MIDDLEWARE = [
