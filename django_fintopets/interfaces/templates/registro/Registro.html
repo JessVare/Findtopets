@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+
+{%block titulo%} Registro {% endblock %}
+
+{% block contenido %} 
+<h1>Registrate</h1> 
+
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h2>Ingresa tus datos</h2>
+                
+                <form action="" method="post">
+                    <label for="nombre">Nombre de Usuario:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe un usuario" /><br>
+
+                    <label for="correo">Correo:</label><br>
+                    <input type="text" id="correo" name="correo" placeholder="Escribe un correo"/><br>
+
+                    <label for="contraseña">Contraseña:</label><br>
+                    <input type="password" id="contraseña" name="contraseña"/><br>
+
+                    <label for="confirma_dos">Confirmar contraseña</label><br>
+                    <input type="password" id="confirmaContraseña" name="confirmarContraseña"/><br>
+
+                    <input type="submit" id="Enviar"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

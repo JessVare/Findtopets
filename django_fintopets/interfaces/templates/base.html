@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} {% endblock %}</title>
+    <link href= "{% static '/css/estilos.css' %}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="barra">
+        <div>
+            <ul class="navegacion">
+                <div id="logo">
+                    <li ><a href="{% url 'inicio' %}"><img src="static/Imagenes/logo.png" width=auto height="50px" alt="Logo"></a>
+                    </li>
+                </div>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'acercade' %}">Acerca de</a></li>
+                <li><a href="{% url 'masdesaparecidas' %}">Mascotas<br>desaparecidas</a></li>
+                <li><a href="{% url 'masencontradas' %}">Mascotas<br>encontradas</a></li>
+                <li><a href="{% url 'adopcion' %}">Adopta un <br> amigo fiel</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="login">
+                <li><a class="sesion" href="{% url 'login' %}">Inicia sesion</a></li>
+                <li><a class="registro" href="{% url 'registro' %}">Registrate</a></li>
+            </ul>
+        </div>
+    </div>
+    {% block contenido %} {% endblock %}
+</body>
+</html>
+
+
