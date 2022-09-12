@@ -26,7 +26,6 @@ urlpatterns = [
     path('masdesaparecidas', views.masDesaparecidas, name="masdesaparecidas"),
     path('masencontradas',views.MasEncontradas, name="masencontradas"),
     path('adopcion', views.adopcion, name="adopcion"),
-    
     path('registro', views.registro, name='registro'),
     path('login', views.login, name='login'),
     
